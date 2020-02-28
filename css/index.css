@@ -251,7 +251,7 @@ footer nav {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 33%;
 }
 footer nav a {
@@ -261,4 +261,24 @@ footer nav a {
 }
 footer nav a:hover {
   color: #957fef;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+}
+.team .title {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team .title h2 {
+  width: 100%;
+}
+.team .title .person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team .title .person img {
+  flex-basis: 20%;
+  border-radius: 50%;
 }
