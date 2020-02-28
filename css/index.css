@@ -164,9 +164,9 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 2rem;
-  border: 2px, solid, black;
+  padding: 2%;
   margin-bottom: 2%;
+  background-color: #dec0f1;
 }
 header h1 {
   font-size: 3rem;
@@ -188,12 +188,12 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 33%;
 }
 header nav a {
   text-decoration: none;
-  color: #b79ced;
+  color: #7161ef;
   font-size: 2rem;
 }
 header nav a:hover {
@@ -201,7 +201,64 @@ header nav a:hover {
 }
 .sectionWho {
   display: flex;
+  justify-content: space-between;
+  padding: 5%;
 }
 .sectionWho img {
-  width: 100%;
+  width: 45%;
+}
+.sectionWho .contentWho {
+  width: 45%;
+}
+.sectionWho .contentWho h2 {
+  padding-bottom: 2%;
+  text-align: center;
+}
+.sectionWhat {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 5%;
+}
+.sectionWhat img {
+  width: 45%;
+}
+.sectionWhat .contentWhat {
+  width: 45%;
+}
+.sectionWhat .contentWhat h2 {
+  padding-bottom: 2%;
+  text-align: center;
+}
+.ourGoal {
+  padding: 5%;
+}
+.ourGoal h2 {
+  text-align: center;
+  padding-bottom: 2%;
+}
+body {
+  background-color: #EFD9CE;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  background-color: #dec0f1;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 33%;
+}
+footer nav a {
+  text-decoration: none;
+  color: #7161ef;
+  font-size: 2rem;
+}
+footer nav a:hover {
+  color: #957fef;
 }
