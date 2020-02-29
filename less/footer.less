@@ -1,0 +1,33 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    background-color: @footerBG;
+    @media @mobile{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        .boxAlign();
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        // border: 1px black solid;
+        width: 33%;
+        @media @mobile{
+            width: 100%;
+        }
+        
+        a{
+            text-decoration: none;
+            color: @navColor;
+            font-size: 2rem;
+            @media @mobile{
+                display: none;
+            }
+            &:hover{
+                color: @navColorHover;
+            }
+        }
+    }
+}

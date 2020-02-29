@@ -1,0 +1,59 @@
+.sectionWho{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    // border-top: 2px dotted black;
+    img{
+        width:45%;
+        // flex-basis: 35%;
+        @media @mobile{
+            display: none;
+        }
+    }
+    .contentWho{
+        width: 45%;
+        @media @mobile{
+            width: 100%;
+        }
+        h2{
+            padding-bottom: 2%;
+            text-align: center;
+        }
+        
+    }
+}
+
+.sectionWhat{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 5%;
+    img{
+        width: 45%;
+        @media @mobile{
+            display: none;
+        }
+    }
+    .contentWhat{
+        width: 45%;
+        @media @mobile{
+            width: 100%;
+        }
+        h2{
+            padding-bottom: 2%;
+            text-align: center;
+        }
+    }
+}
+
+.ourGoal{
+    padding: 5%;
+    h2{
+        text-align: center;
+        padding-bottom: 2%;
+    }
+}
+
+body{
+    background-color: @color1;
+}
