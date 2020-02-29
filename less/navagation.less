@@ -6,13 +6,24 @@ header{
     // border: 2px, solid, black;
     margin-bottom: 2%;
     background-color: @navBG;
+    @media @mobile {
+        flex-direction: column;
+    }
     h1{
         font-size: 3rem;
+        @media @mobile {
+            padding-bottom: 2%;
+            text-align: center;
+        }
     }
     .but{
         .button(5px, @button, @buttonC, 2rem);
         padding: 10px;
         text-decoration: none;
+        @media @mobile {
+            text-align: center;
+            border-radius: 20px;
+        }
         &:hover{
             background-color: @color4;
             color: white;
@@ -25,11 +36,23 @@ header{
         justify-content: space-around;
         // border: 1px black solid;
         width: 33%;
+        @media @mobile {
+            width: 100%;
+            flex-direction: column;
+        }
         
         a{
             text-decoration: none;
             color: @navColor;
             font-size: 2rem;
+            @media @mobile {
+                padding: 2%;
+                border: 1px solid gray;
+                width: 100%;
+                text-align: center;
+                border-radius: 20px;
+                margin: 1%;
+            }
             &:hover{
                 color: @navColorHover;
             }
