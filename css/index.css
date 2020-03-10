@@ -285,10 +285,13 @@ header nav a:hover {
 }
 .ourGoal {
   padding: 5%;
+  text-align: center;
 }
 .ourGoal h2 {
-  text-align: center;
   padding-bottom: 2%;
+}
+.ourGoal .quote {
+  font-weight: bold;
 }
 body {
   background-color: #EFD9CE;
@@ -343,10 +346,17 @@ footer nav a:hover {
 @media (max-width: 500px) {
   .team .title {
     flex-direction: row;
+    justify-content: center;
   }
 }
 .team .title h2 {
   width: 100%;
+  padding-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .team .title h2 {
+    text-align: center;
+  }
 }
 .team .title .person {
   display: flex;
